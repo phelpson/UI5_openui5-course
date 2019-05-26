@@ -10,6 +10,13 @@ sap.ui.define([
 
 		onInit: function () {
 
+		},
+
+		onPress: function (oEvent) {
+			sap.ui.require(["sap/m/MessageToast"], function (oMessage) {
+				oMessage.show("Searching...");
+			});
 		}
+
 	});
 });
